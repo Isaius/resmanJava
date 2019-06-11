@@ -1,16 +1,27 @@
 package code;
 
+import javax.persistence.*;
+
+@Entity
 
 public class Recurso {
-
+	@Id
 	private String id;
+	@Column
 	private String desc;
+	@Column
 	private String tipo;
+	@Column
 	private String categoria;
+	@Column
 	private String estado;
+	@Column
 	private int TMA;
+	@Column
 	private int TMR;
+	@Column
 	private int TMAP;
+	@Column
 	private String MDI;
 	
 	// construtor completo da classe Recurso
@@ -29,7 +40,7 @@ public class Recurso {
 	// construtor vazio da classe Recurso
 	public Recurso() {
 		this.id = null;
-		this.estado = "Disponivel";		// valor default
+		this.estado = "eDisponivel";		// valor default
 		this.MDI = null;
 	}
 
